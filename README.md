@@ -73,9 +73,9 @@ A secure application for storing, managing, and sharing medical reports and trac
 
 ```mermaid
 graph TD
-    Client[Client (ReactJS)] <-->|REST API (JSON)| Server[Backend Server (Node.js/Express)]
-    Server <-->|SQL Queries| DB[(Database (SQLite))]
-    Server <-->|File I/O| Storage[File Storage (Local 'uploads/')]
+    Client["Client (ReactJS)"] <-->|"REST API (JSON)"| Server["Backend Server (Node.js/Express)"]
+    Server <-->|"SQL Queries"| DB[("Database (SQLite)")]
+    Server <-->|"File I/O"| Storage["File Storage (Local 'uploads/')"]
     
     subgraph "Backend System"
         Server
